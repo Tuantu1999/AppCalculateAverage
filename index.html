@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>Ứng dụng tính điểm trung bình sử dụng jquery</title>
+</head>
+<body>
+    <div class="container">
+        <h1>ClassMarksheet</h1>
+
+        <!--input-->
+        <div class="input">
+
+            <div class="input-group input-group-sm mb-3" >
+                <span class="input-group-text" id="inputGroup-sizing-sm">Họ tên</span>
+                <input type="text" class="form-control" id="input_name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <span class="hide">Bạn Phải nhập tên vào trường này</span>    
+            </div>
+    
+            <div class="input-group input-group-sm mb-3" >
+                <span class="input-group-text" id="inputGroup-sizing-sm">Toán</span>
+                <input type="number" class="form-control" id="math" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <span class="hide">Bạn Phải nhập điểm toán vào trường này</span>
+            </div>
+    
+            <div class="input-group input-group-sm mb-3" >
+                <span class="input-group-text" id="inputGroup-sizing-sm">Lý</span>
+                <input type="number" class="form-control" id="physical" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <span class="hide">Bạn Phải nhập điểm lý vào trường này</span>
+            </div>
+    
+            <div class="input-group input-group-sm mb-3" >
+                <span class="input-group-text" id="inputGroup-sizing-sm">Hoá</span>
+                <input type="number" class="form-control" id="chemistry" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <span class="hide">Bạn Phải nhập điểm hoá vào trường này</span>
+            </div>
+
+            <div class="Nhap row">
+                <button type="button" id="setButton" class="btn btn-info col-12">Nhập</button>
+            </div>
+        </div>
+
+        <!--Table-->
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">STT</th>
+                    <th scope="col">Họ tên</th>
+                    <th scope="col">Toán</th>
+                    <th scope="col">Lý</th>
+                    <th scope="col">Hoá</th>
+                    <th scope="col">Trung bình</th>
+                </tr>
+            </thead>
+            <tbody id="table__body">
+                
+            </tbody>
+        </table>
+
+        <!--Calculate-->
+        <div class="cal row">
+            <button type="button" id="GPA" class="btn btn-info col-12">Tính điểm trung bình</button>
+            <button type="button" id="Achieve" class="btn btn-info col-12">Xác định học sinh giỏi</button>
+        </div>
+        
+
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="./scr.js"></script>
+</body>
+</html>

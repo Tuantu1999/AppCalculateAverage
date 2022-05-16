@@ -1,0 +1,101 @@
+body {
+    font-size: 13px;
+
+}
+
+h1 {
+    margin: 30px 30px;
+    text-align: center;
+}
+
+.input-group {
+    width: 300px;
+    margin: 0px auto;
+}
+
+.Nhap {
+    display: flex;
+    flex-direction: row;
+}
+
+.cal {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    padding: 20px 0px 20px 0px;
+}
+
+.btn {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.table {
+    color: rgb(8, 8, 8);
+}
+
+.hide {
+    display: none;
+}
+
+.bgr_color {
+    background-color: red;
+}
+
+.selectBgr_color{
+        background-color: yellow;
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        background-color: yellowgreen;
+    }
+
+    .container {
+        font-size: 10px;
+    }
+
+    .table {
+        color: black;
+        margin-top: 20px;
+    }
+
+    #order {
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 376px) {
+    body {
+        background-color: orangered;
+    }
+
+    .container {
+        font-size: 9px;
+    }
+
+    h1 {
+        margin: 30px 20px;
+    }
+
+    #order {
+        margin-top: 20px;
+    }
+
+    .table {
+        margin-top: 30px;
+        background-color: white;
+        color: black;
+    }
+
+    #GPA {
+        margin-top: -30px;
+        margin-bottom: 20px;
+    }
+
+    #delButton {
+        margin-top: 20px;
+    }
+
+}
